@@ -31,8 +31,6 @@ To run ETL pipeline that cleans data and stores in database python data/process_
 
 To run ML pipeline that trains classifier (Adaboost with Tfidf Vectorizer) and saves python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
 
-To run ML pipeline that trains classifier (MLP with GloVe Embeddings) and saves python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl --model_type 2
-
 In the app directory, run the following command to run the web app. python run.py
 
 Go to http://localhost:3001 to view the web app
