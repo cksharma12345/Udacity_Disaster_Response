@@ -10,3 +10,14 @@ In this project, we will build a model to classify messages that are sent during
 
 2. The second model is an MLP Neural Network utilizing pre-trained GloVe embeddings to transform the messages. It will take the simple average of word vectors to get the message vector.
 
+Finally, this project contains a web app where you can input a message and get classification results.
+
+
+
+# Description of key files
+1.run.py: Script to run the web app
+2.disaster_message.csv: Contains the original disaster messages
+3.disaster_categories.csv: Contains the labels of the disaster messages
+4.process_data.py: Runs the ETL pipeline to process data from both disaster_message.csv and disaster_categories.csv and load them into an SQLite database, DisasterResponse.db.
+5.train_classifier.py: Runs the ML pipeline to classify the messages. The pipeline will build the model, optimize it using grid search and print the model's evaluation. It will then save the classifier model.
+
